@@ -12,20 +12,59 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const baseUrl = "http://localhost:3000";
+const siteName = "Twin Dream";
+
 export const metadata: Metadata = {
-  title: "Twin Dream Ltd | Custom Software Solutions in Kenya",
+  title: "Twin Dream Ltd | Custom Software Solutions",
   description:
     "Twin Dream Limited engineers high-quality, intelligent software and AI solutions for businesses. We deliver on time and on budget. Your vision, engineered.",
   openGraph: {
     title: "Twin Dream Ltd | Custom Software Solutions in Kenya",
     description:
       "Twin Dream Limited engineers high-quality, intelligent software and AI solutions for businesses. We deliver on time and on budget. Your vision, engineered.",
-    url: "https://twindream.co",
-    siteName: "Twin Dream",
+    url: new URL(baseUrl),
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: `${baseUrl}/og-small.png`,
+        width: 600,
+        height: 314,
+        alt: siteName,
+      },
+      {
+        url: `${baseUrl}/og-large.png`,
+        width: 1200,
+        height: 630,
+        alt: siteName,
+      },
+    ],
+  },
+  twitter: {
+    title: "Twin Dream Ltd | Custom Software Solutions in Kenya",
+    description:
+      "Twin Dream Limited engineers high-quality, intelligent software and AI solutions for businesses. We deliver on time and on budget. Your vision, engineered.",
+    card: "summary_large_image",
+    images: [
+      {
+        url: `${baseUrl}/twitter-cover.png`,
+        width: 1500,
+        height: 500,
+        alt: siteName,
+      },
+    ],
   },
 
+  icons: {
+    icon: "/twindream.svg",
+    apple: "/twindream.svg",
+    other: [{ rel: "icon", url: "/twindream.svg", type: "image/svg" }],
+  },
+  metadataBase: new URL(baseUrl),
+  alternates: {
+    canonical: new URL(baseUrl),
+  },
   keywords: [
     "web application development",
     "mobile app developers Kenya",
