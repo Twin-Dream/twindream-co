@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const baseUrl = "http://localhost:3000";
+const baseUrl = "http://twindream.co";
 const siteName = "Twin Dream";
 
 export const metadata: Metadata = {

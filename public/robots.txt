@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://twindream.co
+
+# Sitemaps
+Sitemap: https://twindream.co/sitemap.xml
