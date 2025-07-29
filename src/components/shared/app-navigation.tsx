@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const AppNavigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,8 +38,8 @@ const AppNavigation = () => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">TD</span>
+            <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+              <Image src={"/twindream.svg"} width={50} height={50} alt="TD" />
             </div>
             <span
               className={`font-bold text-xl ${isScrolled ? "text-gray-900" : "text-white"}`}

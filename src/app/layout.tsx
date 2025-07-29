@@ -16,6 +16,16 @@ export const metadata: Metadata = {
   title: "Twin Dream Ltd | Custom Software Solutions in Kenya",
   description:
     "Twin Dream Limited engineers high-quality, intelligent software and AI solutions for businesses. We deliver on time and on budget. Your vision, engineered.",
+  openGraph: {
+    title: "Twin Dream Ltd | Custom Software Solutions in Kenya",
+    description:
+      "Twin Dream Limited engineers high-quality, intelligent software and AI solutions for businesses. We deliver on time and on budget. Your vision, engineered.",
+    url: "https://twindream.co",
+    siteName: "Twin Dream",
+    locale: "en_US",
+    type: "website",
+  },
+
   keywords: [
     "web application development",
     "mobile app developers Kenya",

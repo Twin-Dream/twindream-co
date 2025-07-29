@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Twitter, Linkedin, Github, Mail } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -17,8 +18,8 @@ const Footer = () => {
               viewport={{ once: true }}
               className="flex items-center space-x-2 mb-4"
             >
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">TD</span>
+              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                <Image src={"/twindream.svg"} width={50} height={50} alt="TD" />
               </div>
               <span className="font-bold text-xl">Twin Dream Limited</span>
             </motion.div>
