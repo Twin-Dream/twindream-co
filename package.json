@@ -10,6 +10,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^15.4.5",
+    "firebase": "^12.0.0",
+    "firebase-admin": "^13.4.0",
     "framer-motion": "^12.23.11",
     "lucide-react": "^0.533.0",
     "next": "15.4.4",

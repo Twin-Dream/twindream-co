@@ -3,9 +3,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send, Calendar } from "lucide-react";
+import { sendMessageAction } from "@/lib/firebase/actions/send-message-action";
+import { Message } from "@/lib/types";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<Message>({
     name: "",
     email: "",
     company: "",
@@ -14,8 +16,19 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
+    try {
+      sendMessageAction(formData);
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        message: "",
+      });
+      alert("Your message has been sent successfully");
+    }
   };
 
   const handleChange = (
@@ -220,13 +233,15 @@ const Contact = () => {
                 Ready to discuss your project? Schedule a free consultation call
                 to explore how we can help bring your vision to life.
               </p>
-              <motion.button
+              <motion.a
+                href="https://calendly.com/d/csc4-xp5-8mw/30-minute-meeting"
+                target="_blank"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
               >
                 Schedule Call
-              </motion.button>
+              </motion.a>
             </motion.div>
           </motion.div>
         </div>
