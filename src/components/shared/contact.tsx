@@ -234,7 +234,7 @@ const Contact = () => {
                 to explore how we can help bring your vision to life.
               </p>
               <motion.a
-                href="https://calendly.com/d/csc4-xp5-8mw/30-minute-meeting"
+                href="https://calendly.com/d/cv8n-zky-gdm/30-minute-meeting"
                 target="_blank"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
