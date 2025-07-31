@@ -17,9 +17,10 @@ const baseUrl = "http://twindream.co";
 const siteName = "Twin Dream";
 
 export const metadata: Metadata = {
-  title: "Twin Dream Ltd | Custom Software Solutions",
-  description:
-    "Twin Dream Limited engineers high-quality, intelligent software and AI solutions for businesses. We deliver on time and on budget. Your vision, engineered.",
+  title: {
+    default: "Twin Dream Ltd | Custom Software Solutions in Kenya",
+    template: "%s | Twin Dream Ltd",
+  },
   openGraph: {
     title: "Twin Dream Ltd | Custom Software Solutions in Kenya",
     description:

@@ -34,9 +34,10 @@ const AppNavigation = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <motion.div
+          <motion.a
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
+            href="/"
           >
             <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
               <Image src={"/twindream.svg"} width={50} height={50} alt="TD" />
@@ -46,7 +47,7 @@ const AppNavigation = () => {
             >
               Twin Dream
             </span>
-          </motion.div>
+          </motion.a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
